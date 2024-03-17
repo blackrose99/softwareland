@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bienvenido</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Estilos personalizados -->
+  <style>
+    body {
+      background-color: #e9f5e8; /* Color de fondo verde claro */
+    }
+    .jumbotron {
+      background-color: #10eb17; /* Color de fondo verde */
+      color: #fff;
+      text-align: center;
+      margin-bottom: 0;
+    }
+    .contact-info {
+      background-color: #f3f3f3; /* Color de fondo gris claro */
+      padding: 20px;
+      border-radius: 10px;
+    }
+    .contact-info p {
+      font-size: 18px;
+    }
+    .contact-button {
+      display: flex;
+      margin-top: 20px;
+      align-items: center;
+      justify-content: center;
+    }
+    .contact-button a {
+      text-decoration: none;
+      color: #fff;
+    }
+    .service-icons {
+      font-size: 30px;
+      margin-right: 10px;
+      cursor: pointer; /* Hacer que el cursor cambie al pasar sobre los iconos */
+    }
+    .service-heading {
+      color: #056709;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="jumbotron">
+    <h1 class="display-4">¡Bienvenido!</h1>
+    <p class="lead">Gracias por visitar nuestra página.</p>
+    <hr class="my-4">
+    <p>Estamos aquí para ayudarte con tus proyectos de programación.</p>
+  </div>
+  <div class="text-center mt-4">
+    <h2 class="service-heading">¿Qué ofrecemos?</h2>
+    <div class="row">
+        <div class="col-md-4">
+            <i class="fas fa-chalkboard-teacher service-icons" data-toggle="modal" data-target="#asesoriaDevModal"></i>
+            <p>Asesorías y Acompañamiento</p>
+        </div>
+        <div class="col-md-4">
+            <i class="fas fa-code service-icons" data-toggle="modal" data-target="#webDevModal"></i>
+            <p>Desarrollo web</p>
+        </div>
+        <div class="col-md-4">
+            <i class="fas fa-cogs service-icons" data-toggle="modal" data-target="#microservicesModal"></i>
+            <p>Microservicios</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <i class="fab fa-react service-icons" data-toggle="modal" data-target="#reactModal"></i>
+            <p>React/Angular/Vue.js</p>
+        </div>
+        <div class="col-md-4">
+            <i class="fab fa-java service-icons" data-toggle="modal" data-target="#javaModal"></i>
+          <p>Java</p>
+        </div>
+        <div class="col-md-4">
+            <i class="fab fa-bootstrap service-icons" data-toggle="modal" data-target="#bootstrapModal"></i>
+            <p>Frontend </p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <i class="fab fa-docker service-icons" data-toggle="modal" data-target="#dockerModal"></i>
+            <p>Dockerización</p>
+        </div>
+        <div class="col-md-4">
+            <i class="fas fa-sitemap service-icons" data-toggle="modal" data-target="#dataStructureModal"></i>
+            <p>Estructura de datos</p>
+        </div>
+        <div class="col-md-4">
+            <i class="fas fa-database service-icons" data-toggle="modal" data-target="#databaseModal"></i>
+            <p>Bases de datos</p>
+        </div>
+    </div>
+</div>
+
+  
+  <div class="contact-info text-center mt-4">
+    <h2>Información de Contacto</h2>
+  
+    <!-- Botones de contacto -->
+    <div class="contact-button">
+      <a href="https://github.com/blackrose99" target="_blank" class="btn btn-primary mr-2" role="button">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <button type="button" class="btn btn-success mr-2" data-toggle="modal" data-target="#whatsappModal">
+        <i class="fab fa-whatsapp"></i> WhatsApp
+      </button>
+      <a href="https://discord.com/users/blackrose5562" target="_blank" class="btn btn-info" role="button">
+        <i class="fab fa-discord"></i> Discord
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para Desarrollo Web -->
+<div class="modal fade" id="webDevModal" tabindex="-1" role="dialog" aria-labelledby="webDevModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="webDevModalLabel"><i class="fas fa-code"></i> Desarrollo Web</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Ofrecemos servicios de desarrollo web utilizando las últimas tecnologías y frameworks como HTML, CSS, JavaScript, React, etc.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para Asesorías y Acompañamiento -->
+<div class="modal fade" id="asesoriaDevModal" tabindex="-1" role="dialog" aria-labelledby="asesoriaDevModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title"><i class="fas fa-chalkboard-teacher"></i> Asesorías y Acompañamiento</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Ofrecemos servicios de tutorías, seguimiento y asesoramiento personalizado para ayudarte en tu proceso de aprendizaje y desarrollo profesional.
+        <p><a href="https://wa.me/573168149970?text=Hola%20necesito%20ayuda%20con%20esto" target="_blank"><i class="fas fa-pencil-alt"></i> Escríbenos en WhatsApp</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal para Microservicios -->
+<div class="modal fade" id="microservicesModal" tabindex="-1" role="dialog" aria-labelledby="microservicesModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="microservicesModalLabel"><i class="fas fa-cogs"></i> Microservicios</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Ofrecemos servicios de implementación y gestión de microservicios utilizando tecnologías modernas como Docker, Kubernetes, etc.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para Dockerización -->
+<div class="modal fade" id="dockerModal" tabindex="-1" role="dialog" aria-labelledby="dockerModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="dockerModalLabel"><i class="fab fa-docker"></i> Dockerización</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Ofrecemos servicios de contenerización de aplicaciones mediante Docker para facilitar el despliegue y la gestión de entornos de desarrollo y producción.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para React -->
+<div class="modal fade" id="reactModal" tabindex="-1" role="dialog" aria-labelledby="reactModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="reactModalLabel"><i class="fab fa-react"></i> React</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Ofrecemos servicios de desarrollo de aplicaciones web utilizando el framework React.js, conocido por su eficiencia y flexibilidad.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para Java -->
+<div class="modal fade" id="javaModal" tabindex="-1" role="dialog" aria-labelledby="javaModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="javaModalLabel"><i class="fab fa-java"></i> Java</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Ofrecemos servicios de desarrollo de aplicaciones empresariales utilizando el lenguaje de programación Java y el framework Spring Boot.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para Bootstrap -->
+<div class="modal fade" id="bootstrapModal" tabindex="-1" role="dialog" aria-labelledby="bootstrapModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="bootstrapModalLabel"><i class="fab fa-bootstrap"></i> Bootstrap</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Ofrecemos servicios de diseño y desarrollo frontend utilizando el framework Bootstrap para crear interfaces web modernas y responsivas.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para Estructura de Datos -->
+<div class="modal fade" id="dataStructureModal" tabindex="-1" role="dialog" aria-labelledby="dataStructureModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="dataStructureModalLabel"><i class="fas fa-sitemap"></i> Estructura de Datos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Ofrecemos servicios de diseño e implementación de estructuras de datos eficientes para optimizar el rendimiento y la escalabilidad de tus aplicaciones.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para Bases de Datos -->
+<div class="modal fade" id="databaseModal" tabindex="-1" role="dialog" aria-labelledby="databaseModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="databaseModalLabel"><i class="fas fa-database"></i> Bases de Datos</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Ofrecemos servicios de diseño, implementación y administración de bases de datos SQL y NoSQL para satisfacer las necesidades de tu aplicación.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WhatsApp Modal -->
+<div class="modal fade" id="whatsappModal" tabindex="-1" role="dialog" aria-labelledby="whatsappModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="whatsappModalLabel">Contacto por WhatsApp</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        ¿Deseas contactarme por WhatsApp?
+        <br>
+        <strong>Este es mi número:</strong> <a href="https://wa.me/573168149970" target="_blank">+57 316 814 9970</a>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <a href="https://wa.me/573168149970" target="_blank" class="btn btn-success">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery y Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
